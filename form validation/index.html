@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<script>
+
+    function testResults (form) {
+        var TestVar1 = form.inputbox1.value;
+        if(TestVar1==="")
+        {
+            document.write("enter the letter")
+        }
+        var Testvar2 = form.inputbox2.value;
+        var Testvar3 = form.inputbox3.value;
+        var Testvar4 = form.inputbox4.value;
+        var Testvar5 = form.inputbox5.value;
+        var Testvar6 = form.inputbox6.value;
+        console.log (TestVar1);
+        console.log(Testvar2);
+        console.log(Testvar3);
+        console.log(Testvar4);
+        console.log(Testvar5);
+        console.log(Testvar6);
+        document.innerHTML = Testvar1;
+        document.innerHTML = Testvar2;
+        document.innerHTML = Testvar3;
+        document.innerHTML = Testvar4;
+        document.innerHTML = Testvar5;
+        document.innerHTML = Testvar6;
+
+
+    }
+    </script>
+<body>
+    <FORM NAME="myform" ACTION="" METHOD="GET">Enter something in the box: <BR>
+        <input type="text" name="inputbox1" value="" placeholder="Enter the First Name"><P>
+            <input type="text" Name="inputbox2" value="" placeholder="Enter the last name"><P>
+            <input type="text" name="inputbox3" value="" placeholder="Enter The First Name"><P>
+                <input type="text" name="inputbox4" value="" placeholder="Enter Email id">
+                <input type="text" name="inputbox5" value= "" placeholder="Enter the password">
+                <input type="text" name="inputbox6" value="" placeholder="Enter the again Password"><P></P>
+
+        <INPUT TYPE="button" NAME="button" Value="Click" onClick="testResults(this.form)">
+           
+</body>
+</html>
